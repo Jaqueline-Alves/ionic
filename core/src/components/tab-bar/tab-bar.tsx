@@ -64,6 +64,7 @@ export class TabBar implements ComponentInterface {
    */
   @Prop() translucent = false;
 
+  /** @internal */
   @Event() ionTabbarChanged!: EventEmitter<TabbarChangedDetail>;
 
   @Listen('body:keyboardWillHide')
